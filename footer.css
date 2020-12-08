@@ -1,0 +1,104 @@
+.footer {
+    height: 170px;
+    margin-top: 14px;
+    position: relative;
+}
+
+.footer-left {
+    width: 234px;
+    height: 170px;
+    background-color: rgb(95,87,80);
+    margin-right: 14px;
+    position: absolute;
+    left: 0;
+}
+.footer-left ul {
+    width: 234px;
+    height: 85px;
+}
+
+.footer-left li{
+    display: block;
+    width: 78px;
+    height: 85px;
+    /* border: solid 1px red; */
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+}
+.footer-left li::before {
+    width: 64px;
+    height: 1px;
+    margin-left: 6px;
+    margin-top: 5px;
+}
+.footer-left li::after {
+    width: 1px;
+    height: 64px;
+    margin-top: -35px;
+}
+.footer-left li::before,
+.footer-left li::after {
+    float: left;
+    content: '';
+    background-color: #665e57;
+}
+
+.footer-left a {
+    color: rgb(207,204,202);
+    padding: 8px 0;  
+}
+.footer-left a:hover {
+    color: #fff;
+}
+/* 6个图标字体 */
+.footer-left .home-list1::before {
+    content: '\e76d';
+    font-family: 'iconfont';
+    font-size: 30px;
+}
+.footer-left .home-list2::before {
+    content: '\e835';
+    font-family: 'iconfont';
+    font-size: 30px;
+}
+.footer-left .home-list3::before {
+    content: '\e88f';
+    font-family: 'iconfont';
+    font-size: 30px;
+}
+.footer-left .home-list4::before {
+    content: '\e7c8';
+    font-family: 'iconfont';
+    font-size: 30px;
+}
+.footer-left .home-list5::before {
+    content: '\e8d2';
+    font-family: 'iconfont';
+    font-size: 30px;
+}
+.footer-left .home-list6::before {
+    content: '\e801';
+    font-family: 'iconfont';
+    font-size: 30px;
+}
+
+
+.footer-right {
+    width: 978px;
+    float: right;
+    position: absolute;
+    right: 0;
+}
+
+.footer-right a {
+    width: 316px;
+    height: 170px;
+    float: right;
+}
+.footer-right a.center {
+    margin: 0 15px;
+}
+.footer-right img {
+    width: 100%;
+}

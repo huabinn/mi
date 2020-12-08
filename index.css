@@ -1,0 +1,125 @@
+/* index主页的样式表 */
+.topbar {
+    height: 40px;
+    background-color: rgb(51,51,51);
+    color: #b0b0b0;
+    font-size: 12px;
+    line-height: 40px;
+    z-index: 999;
+}
+
+/* 顶部导航条左边的样式 */
+.topleft {
+    float: left;
+    position: relative;
+}
+.topleft li,
+.topleft span {
+    line-height: 40px;
+    color: rgb(66,66,66);
+    float: left;
+}
+.topleft span {
+    margin: 0 10px;
+}
+.topleft a {
+    /* padding: 0 10px; */
+    color: #b0b0b0;
+    text-align: center;
+}
+
+/* 设置下拉app */
+.topleft .app:hover .download,
+.topleft .app:hover .download::before {
+    display: block;
+}
+.topleft .download {
+    display: none;
+    position: absolute;
+    width: 124px;
+    height: 148px;
+    background-color: #fff;
+    margin-left: -35px;
+    /* 行高1倍 */
+    line-height: 1;
+    font-size: 14px;
+    color: rgb(51,51,51);
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    z-index: 999;
+    /* 用于添加样式的过渡效果
+    transition: height 1s; */
+}
+/* 三角形设置 */
+.topleft .download::before {
+    display: none;
+    content: '';
+    width: 0;
+    border: 10px solid;
+    border-color: white transparent;
+    margin: 0 auto;
+    border-top: none;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 99;
+}
+.topleft .download img {
+    width: 90px;
+    margin: 17px 17px 10px 17px;
+}
+
+/* 顶部导航条右边的样式 */
+.topright {
+    float: right;
+    position: relative;
+}
+.topright li {
+    color: rgb(66,66,66);
+    height: 40px;
+    float: right;
+}
+.topright a {
+    padding: 0 10px;
+    color: #b0b0b0;
+    text-align: center;
+}
+.topright li:first-child {
+    background-color: rgb(66,66,66);
+}
+/* 图标字体 */
+.topright li:first-child a::before {
+    content: '\e759';
+    font-family: 'iconfont';
+    margin-right: 2px;
+}
+.topright .shopping {
+    display: none;
+    width: 318px;
+    height: 100px;
+    background-color: #fff;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .15);
+    z-index: 999;
+}
+.topright .shopping p {
+   
+    margin: 33px 0px;
+}
+/* 顶部导航条动画设计 */
+.topright li:first-child:hover a{
+    display: block;
+    color: rgb(255,103,0);
+    background-color: #fff;
+}
+.topright li:first-child:hover .shopping {
+    display: block;
+}
+.topleft li:hover a,
+.topright li:hover a {
+    color: #fff;
+}

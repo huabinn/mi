@@ -1,0 +1,23 @@
+/* 公共样式表 */
+
+/* 伪类塌陷解决 */
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+/* 主体的字体颜色 */
+body {
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    color: #333;
+    background-color: #fff;
+    /* 不让body变小导致溢出 */
+    min-width: 1226px;
+}
+/* 长度为1226的居中盒子 */
+.container {
+    width: 1226px;
+    margin: 0 auto;
+    position: relative;
+}

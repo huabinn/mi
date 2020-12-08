@@ -1,0 +1,138 @@
+.header {
+    height: 100px;
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    line-height: 100px;
+    z-index: 99;
+    position: relative;
+}
+/* 左边的商标 */
+.header-nav {
+    width: 55px;
+    height: 55px;
+    background-color: rgb(255,103,0);
+    margin-top: 22px;
+    position: absolute;
+    left: 0px;
+    background-image: url(./pictures/mi-logo.png);
+    background-position: center center;
+    z-index: 1;
+}
+.header-nav:hover {
+    background-image: url(./pictures/mi-home.png);
+}
+.header-nav img {
+    float: left;
+}
+
+/* 右边的主体区 */
+.header-main {
+    width: 992px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+.header-list {
+    width: 580px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+}
+.header-list li {
+    float: left;
+}
+.header-list a {
+    margin: 0px 10px;
+}
+.header-list a:hover {
+    color: #f00;
+}
+.header-list:hover .hidden{
+    display: block;
+}
+
+
+/* 隐藏框的样式 */
+.hidden {
+    display: none;
+    width: 1920px;
+    height: 230px;
+    border-top: solid 1px rgb(224,224,224);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .3);;
+    position: absolute;
+    z-index: 999;
+    left: -581px;
+    top: 100px;
+}
+.hidden-container {
+    width: 1226px;
+    height: 230px;
+    background-color: #fff;
+    /* border: solid 1px red; */
+    position: absolute;
+    left: 347px;
+    z-index: 999;
+}
+.hidden-list {
+    width: 205px;
+    height: 230px;
+    float: left;
+}
+.hidden-list:nth-child(n+2)::before {
+    float: left;
+    content: '';
+    background-color: rgb(224,224,224);
+    width: 1px;
+    height: 100px;
+    margin-top: 35px;
+}
+
+
+/* 右边的查询框 */
+.header-check {
+    width: 296px;
+    height: 50px;
+    border: solid 1px rgb(224,224,224);
+    box-sizing: border-box;
+    margin: 25px 0;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+.header-check:hover,
+.header-check:hover .checkbox {
+    border-color: rgb(176,176,176);
+}
+.input_box {
+    width: 245px;
+    height: 48px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    line-height: 48px;
+    position: absolute;
+    left: 0;
+}
+.checkbox {
+    width: 48px;
+    height: 48px;
+    border-left: solid 1px rgb(224,224,224);
+    line-height: 48px;
+    position: absolute;
+    right: 0;
+}
+.checkbox::before {
+    content: '\e8aa';
+    font-family: 'iconfont';
+    font-size: 24px;
+    margin-left: 12px;
+}
+.checkbox:hover {
+    color: #fff;
+    border: none;
+    /* border-color: rgb(255,103,0); */
+    outline: solid 1px rgb(255,103,0);
+    background-color: rgb(255,103,0);
+}
